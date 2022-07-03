@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.game-board{
+    width: 100%;
+}
+#win{
+    
+    font-size: larger;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#text{
+    margin: auto;
+    text-align: center;
+}
+#text2{
+    margin: auto;
+    text-align: center;
+}
+.game-grid{
+    width: 450px;
+    height: auto;
+    margin: auto;
+    margin-top: 50px;
+}
+.opptions{
+    border: 1px solid black;
+    float: left;
+}
+.box{
+    width: 150px;
+    border: 1px solid black;
+    height: 150px;
+    text-align: center;
+    font-size: xxx-large;
+    font-weight: bolder;
+    padding: 34px;
+    cursor: pointer;
+}
+.circle{
+    text-align: center;
+     margin: 0;
+    padding: 2px;
+    display: none;
+    font-size: xxx-large;
+}
+.ex{
+    display: none;
+    text-align: center;
+    margin: 0;
+    padding:2px;
+    font-size: xxx-large;
+}
