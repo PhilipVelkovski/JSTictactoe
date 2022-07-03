@@ -36,8 +36,6 @@ var box8 = document.getElementById("eight");
 
 var box9 = document.getElementById("nine");
 
-var bor = 0;
-
 
 function checkWinforX(){
     if(box1.textContent.includes("X") && box2.textContent.includes("X") && box3.textContent.includes("X") ){
@@ -159,20 +157,16 @@ function checkWinforX(){
 function playXandO(){
     document.getElementById(this.id).innerHTML = "X";
 
-    // console.log(this.id);
+   
     var m = this.id;
-    const enteredBoxes = [];
-
+    
     console.log(m + "  OVA E KLIKNATIOT BOX");
            
     var circle = generateRandom();
 
     console.log(circle + "  PRVIOT IDEX od RANDOM");
-    enteredBoxes.push(circle);
     
-    //  for(var m = 0; m < enteredBoxes.length; m++){
-    //          console.log(enteredBoxes[m] + " OVA E NIZA IZGENERIRANI ");
-    //  };
+
     if((checkWinfoO()!= true ) && (checkWinforX() != true)){
         if( !(document.getElementById(circle).innerHTML == "X") && !(document.getElementById(circle).innerHTML == "O") ){
             // circle = new generateRandom();
@@ -211,10 +205,14 @@ function playXandO(){
               } 
           
         };
-    }
-    
-    // checkWinfoO();
-    // checkWinforX();
+         
+       
+    };
+    if((checkWinfoO() == true ) || (checkWinforX() == true)){
+       document.getElementById("start-over").innerHTML = "Start Over";
+       
+       document.getElementById("start-over").style.border = "1px solid";
+      };
 };
 
 
@@ -223,14 +221,21 @@ for(var i = 0 ;i < box.length ; i++){
 
 };
 
-if(checkWinfoO() == true){
-    box.removeEventListener("click",playXandO());
-    document.getElementById("win").innerHTML = " Player O wins"
+var start_again =   document.getElementById("reset");
+function Reset(){
+   location.reload();
 };
-if( checkWinforX() == true){
+
+
+
+// if(checkWinfoO() == true){
+//     box.removeEventListener("click",playXandO());
+//     document.getElementById("win").innerHTML = " Player O wins"
+// };
+// if( checkWinforX() == true){
     
-    box.removeEventListener("click",playXandO());
-};
+//     box.removeEventListener("click",playXandO());
+// };
 
 
 

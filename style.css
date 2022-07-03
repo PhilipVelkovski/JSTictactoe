@@ -12,23 +12,11 @@
     text-align: center;
     margin-bottom: 50px;
 }
-#text{
-    margin: auto;
-    text-align: center;
-}
-#text2{
-    margin: auto;
-    text-align: center;
-}
 .game-grid{
     width: 450px;
     height: auto;
     margin: auto;
     margin-top: 50px;
-}
-.opptions{
-    border: 1px solid black;
-    float: left;
 }
 .box{
     width: 150px;
@@ -40,17 +28,17 @@
     padding: 34px;
     cursor: pointer;
 }
-.circle{
+#reset{
     text-align: center;
-     margin: 0;
-    padding: 2px;
-    display: none;
-    font-size: xxx-large;
+    font-size: 25px;
+    margin-left: 117px;
+    margin-top: 5px;
+    width: 100px;
+
 }
-.ex{
-    display: none;
-    text-align: center;
-    margin: 0;
-    padding:2px;
-    font-size: xxx-large;
+#start-over{
+    border: none;
+    padding: 0px;
+    width: 180px;
+    background-color: white;
 }
